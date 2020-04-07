@@ -7,13 +7,13 @@
   </module>
   <module id="Module_1493296623622">
     <web>
-      <web-uri>CustomerOrderServicesTest.war</web-uri>
+      <web-uri>CustomerOrderServicesTest-0.1.0-SNAPSHOT.war</web-uri>
       <context-root>CustomerOrderServicesTest</context-root>
     </web>
   </module>
   <module id="Module_1493296624098">
     <web>
-      <web-uri>CustomerOrderServicesWeb.war</web-uri>
+      <web-uri>CustomerOrderServicesWeb-0.1.0-SNAPSHOT.war</web-uri>
       <context-root>CustomerOrderServicesWeb</context-root>
     </web>
   </module>

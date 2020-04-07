@@ -6,12 +6,12 @@
   <version>0.1.0-SNAPSHOT</version>
   <name>CustomerOrderServicesApp</name>
   <packaging>ear</packaging>
-  <parent>
+  <!-- <parent>
     <artifactId>project</artifactId>
     <groupId>org.pwte.example</groupId>
     <version>0.1.0-SNAPSHOT</version>
     <relativePath>../CustomerOrderServicesProject</relativePath>
-  </parent>
+  </parent> -->
   <dependencies>
     <dependency>
       <groupId>org.pwte.example</groupId>
@@ -34,6 +34,23 @@
   </dependencies>
   <build>
     <plugins>
+    
+    		<plugin>
+       <groupId>io.openliberty.tools</groupId>
+       <artifactId>liberty-maven-plugin</artifactId>
+       				<version>3.2</version>
+       <configuration>
+         <runtimeArtifact>
+            <groupId>com.ibm.websphere.appserver.runtime</groupId>
+            <artifactId>wlp-webProfile7</artifactId>
+            <version>20.0.0.3</version>
+            <type>zip</type>
+        </runtimeArtifact>
+           <appsDirectory>apps</appsDirectory>
+       </configuration>
+   </plugin>
+   
+   
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
